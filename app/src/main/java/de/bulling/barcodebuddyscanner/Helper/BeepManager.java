@@ -7,8 +7,6 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Vibrator;
 
-import de.bulling.barcodebuddyscanner.R;
-
 /**
  * Manages beeps and vibrations.
  */
@@ -41,7 +39,7 @@ public final class BeepManager {
 				.setAudioAttributes(attributes)
 				.build();
 
-		beepSound = soundPool.load(context, R.raw.zxing_beep, 1);
+		beepSound = soundPool.load(context, com.google.zxing.client.android.R.raw.zxing_beep, 1);
 	}
 
 	public boolean isBeepEnabled() {
